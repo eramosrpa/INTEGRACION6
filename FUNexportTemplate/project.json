@@ -1,0 +1,66 @@
+{
+  "name": "FUNexportTemplate",
+  "description": "3. Robot creador de documentos",
+  "main": "Main.xaml",
+  "dependencies": {
+    "ActivitiesSendOutlookMeeting": "[1.0.5]",
+    "BalaReva.EasyOutlook.Activities": "[1.0.0]",
+    "Outlook.Mail.Activities": "[1.0.2]",
+    "OutlookActivities": "[1.1.1]",
+    "OutlookMailWithExcel.Activities": "[1.0.0]",
+    "RetrieveOutlookMails.Activities": "[1.0.0]",
+    "UiPath.Excel.Activities": "[2.10.2-preview]",
+    "UiPath.Mail.Activities": "[1.9.5]",
+    "UiPath.Persistence.Activities": "[1.1.8]",
+    "UiPath.System.Activities": "[20.10.4]",
+    "UiPath.Word.Activities": "[1.6.2-preview]",
+    "UiPathTeam.OutlookCalendar.Activities": "[1.0.0]",
+    "UiPathTeam.OutlookInlineImage.Activities": "[1.1.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.6.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": true,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "5f7bbfbe-c1eb-4549-8753-36cb4b5dd16e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": true,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
