@@ -199,7 +199,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="708,3560" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -272,7 +272,7 @@
                                   </ui:Target>
                                 </ui:SetValue.Target>
                               </ui:SetValue>
-                              <ui:SetValue ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Set Text 'INPUT  dia'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SetValue_10" Text="Tessi2021*">
+                              <ui:SetValue ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Set Text 'INPUT  dia'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SetValue_10" Text="Daro2021*">
                                 <ui:SetValue.Target>
                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e1f4207-6697-4003-b022-fab65da6299c" InformativeScreenshot="e44c6b6c4b28bd9fb6599a1f6020deb4" Selector="&lt;webctrl src='verificar/contenido_verificar_pago_linea.jsp' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' id='dia' /&gt;">
                                     <ui:Target.TimeoutMS>
