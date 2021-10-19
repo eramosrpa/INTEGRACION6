@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="715,777" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,827" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
       <x:String>System.Activities</x:String>
@@ -45,7 +45,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -78,6 +78,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap:VirtualizedContainerService.HintSize="725,712" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -152,7 +153,7 @@
               <av:PointCollection x:Key="ConnectorLocation">130,422 130,564</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <Sequence sap:VirtualizedContainerService.HintSize="656,536" sap2010:WorkflowViewState.IdRef="Sequence_30">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="archivo" />
             </Sequence.Variables>
@@ -161,10 +162,10 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:PathExists DisplayName="Path Exists" Exists="[archivo]" sap:VirtualizedContainerService.HintSize="579,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+horaArchivo+&quot;.xlsx&quot;]" PathType="File" />
-            <If Condition="[archivo]" sap:VirtualizedContainerService.HintSize="579,315" sap2010:WorkflowViewState.IdRef="If_6">
+            <ui:PathExists DisplayName="Path Exists" Exists="[archivo]" sap:VirtualizedContainerService.HintSize="614,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+horaArchivo+&quot;.xlsx&quot;]" PathType="File" />
+            <If Condition="[archivo]" sap:VirtualizedContainerService.HintSize="614,315" sap2010:WorkflowViewState.IdRef="If_6">
               <If.Else>
-                <ui:CopyFile ContinueOnError="{x:Null}" Destination="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+horaArchivo+&quot;.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[rutaComparendo+&quot;C2.xlsx&quot;]">
+                <ui:CopyFile ContinueOnError="{x:Null}" Destination="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+&quot;15-10-2021&quot;+&quot;.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[rutaComparendo+&quot;C2.xlsx&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,13 +183,13 @@
                   <av:Size x:Key="ShapeSize">200,51</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,306" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" UiBrowser="[navegadorComparendo]" Url="https://www3.simit.org.co/Simit/indexA.jsp">
+              <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" UiBrowser="[navegadorComparendo]" Url="https://www3.simit.org.co/Simit/indexA.jsp">
                 <ui:OpenBrowser.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,205" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="750,3714" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd1:Rectangle" Name="asterico" />
                         <Variable x:TypeArguments="x:Boolean" Name="ErrorContrasenia" />
@@ -202,7 +203,7 @@
                       <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="708,3560" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -467,7 +468,7 @@
                               </If>
                             </Sequence>
                             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="628,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="628,1178" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_11" InstanceCachePeriod="3000" WorkbookPath="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+horaArchivo+&quot;.xlsx&quot;]">
+                            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="628,1178" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_11" InstanceCachePeriod="3000" WorkbookPath="[rutaComparendo+&quot;DATOS\&quot;+&quot;InformacionConsultada&quot;+&quot; &quot;+&quot;15-10-2021&quot;+&quot;.xlsx&quot;]">
                               <ui:ExcelApplicationScope.Body>
                                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                   <ActivityAction.Argument>
@@ -523,8 +524,8 @@
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_23" />
-                                                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE DATO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
+                                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="774,22" sap2010:WorkflowViewState.IdRef="Delay_23" />
+                                                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE DATO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="774,185" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
                                                         <ui:GetRowItem.Value>
                                                           <OutArgument x:TypeArguments="x:String">[tipodocumento]</OutArgument>
                                                         </ui:GetRowItem.Value>
@@ -535,7 +536,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ui:GetRowItem>
-                                                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DATO CONSULTA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
+                                                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DATO CONSULTA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="774,185" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
                                                         <ui:GetRowItem.Value>
                                                           <OutArgument x:TypeArguments="ui:GenericValue">[identificacion]</OutArgument>
                                                         </ui:GetRowItem.Value>
@@ -546,7 +547,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ui:GetRowItem>
-                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_72">
+                                                      <Assign sap:VirtualizedContainerService.HintSize="774,60" sap2010:WorkflowViewState.IdRef="Assign_72">
                                                         <Assign.To>
                                                           <OutArgument x:TypeArguments="x:Int32">[contadorError]</OutArgument>
                                                         </Assign.To>
@@ -554,7 +555,7 @@
                                                           <InArgument x:TypeArguments="x:Int32">[contadorError+1]</InArgument>
                                                         </Assign.Value>
                                                       </Assign>
-                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_73">
+                                                      <Assign sap:VirtualizedContainerService.HintSize="774,60" sap2010:WorkflowViewState.IdRef="Assign_73">
                                                         <Assign.To>
                                                           <OutArgument x:TypeArguments="x:Int32">[clickSiguiente]</OutArgument>
                                                         </Assign.To>
@@ -562,7 +563,7 @@
                                                           <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                                         </Assign.Value>
                                                       </Assign>
-                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_74">
+                                                      <Assign sap:VirtualizedContainerService.HintSize="774,60" sap2010:WorkflowViewState.IdRef="Assign_74">
                                                         <Assign.To>
                                                           <OutArgument x:TypeArguments="x:Int32">[igualSiguiente]</OutArgument>
                                                         </Assign.To>
@@ -2295,7 +2296,7 @@
                                                     </Sequence>
                                                   </TryCatch.Try>
                                                   <TryCatch.Catches>
-                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2346,7 +2347,7 @@
                                                     </Catch>
                                                   </TryCatch.Catches>
                                                 </TryCatch>
-                                                <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="438,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                   <ui:Click.CursorPosition>
                                                     <ui:CursorPosition Position="Center">
                                                       <ui:CursorPosition.OffsetX>
@@ -2368,7 +2369,7 @@
                                                     </ui:Target>
                                                   </ui:Click.Target>
                                                 </ui:Click>
-                                                <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_71">
+                                                <Assign sap:VirtualizedContainerService.HintSize="438,60" sap2010:WorkflowViewState.IdRef="Assign_71">
                                                   <Assign.To>
                                                     <OutArgument x:TypeArguments="x:Int32">[contadorError]</OutArgument>
                                                   </Assign.To>
@@ -2388,7 +2389,7 @@
                                         </ui:ForEachRow>
                                       </TryCatch.Try>
                                       <TryCatch.Catches>
-                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="514,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="518,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2416,7 +2417,7 @@
                           </Sequence>
                         </TryCatch.Try>
                         <TryCatch.Catches>
-                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="670,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="674,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2427,7 +2428,7 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                               </ActivityAction.Argument>
-                              <Sequence sap:VirtualizedContainerService.HintSize="480,487" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                              <Sequence sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_110">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2478,7 +2479,7 @@
                           </Catch>
                         </TryCatch.Catches>
                       </TryCatch>
-                      <ui:CloseTab Browser="[navegadorComparendo]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                      <ui:CloseTab Browser="[navegadorComparendo]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="708,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
                     </Sequence>
                   </ActivityAction>
                 </ui:OpenBrowser.Body>
@@ -2548,7 +2549,7 @@
                 <OutArgument x:TypeArguments="x:String">[rutaComparendo]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">["C:\Users\jparra\OneDrive\RPA\INTEGRACION\ComparendosINT\"]</InArgument>
+                <InArgument x:TypeArguments="x:String">["C:\Users\desarrollo.tessi\Desktop\INTEGRACION\ComparendosINT\"]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
